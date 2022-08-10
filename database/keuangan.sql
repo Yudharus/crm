@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2021 at 08:15 AM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 7.4.22
+-- Generation Time: Aug 10, 2022 at 04:29 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `keuangan`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customer`
+--
+
+CREATE TABLE `customer` (
+  `id_customer` int(11) NOT NULL,
+  `nama_customer` varchar(50) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
+  `nomor` int(13) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`id_customer`, `nama_customer`, `alamat`, `nomor`) VALUES
+(1, 'Yeremia Wahyu', 'Jl. Sekeloa No. 90 . Kec. Coblong', 832303832),
+(2, 'Yeremia Wahyu', 'Jl. Sekeloa No. 90 . Kec. Coblong ', 832303832),
+(5, 'aaa', 'as', 33);
 
 -- --------------------------------------------------------
 
@@ -65,7 +87,7 @@ CREATE TABLE `data_transaksi` (
 --
 
 INSERT INTO `data_transaksi` (`id_transaksi`, `tanggal`, `id_master`, `keterangan`, `pemasukkan`, `pengeluaran`) VALUES
-(1, '2021-11-22', 4, 'alat tulis', '200000', '-');
+(1, '2021-11-22', 4, 'Januari', '200000', '6');
 
 -- --------------------------------------------------------
 
@@ -93,6 +115,12 @@ INSERT INTO `user` (`id`, `username`, `password`, `level`) VALUES
 --
 
 --
+-- Indexes for table `customer`
+--
+ALTER TABLE `customer`
+  ADD PRIMARY KEY (`id_customer`);
+
+--
 -- Indexes for table `data_master`
 --
 ALTER TABLE `data_master`
@@ -116,6 +144,12 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `customer`
+--
+ALTER TABLE `customer`
+  MODIFY `id_customer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `data_master`
 --
 ALTER TABLE `data_master`
@@ -125,7 +159,7 @@ ALTER TABLE `data_master`
 -- AUTO_INCREMENT for table `data_transaksi`
 --
 ALTER TABLE `data_transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `user`
