@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <link rel="stylesheet" href="./css/bootstrap-datetimepicker.min.css">
 
 </head>
+
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-           <div class="navbar-header">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -31,7 +33,7 @@
                         <a href="transaksi.php" class="dropdown-toggle">Transaksi</a>
                     </li>
                     <li class="">
-                        <a href="laporan.php" class="dropdown-toggle">Laporan</a>
+                        <a href="kuisoner.php" class="dropdown-toggle">Kuisoner</a>
                     </li>
                     <li class="">
                         <a href="costumer.php" class="dropdown-toggle">customer</a>
@@ -41,5 +43,5 @@
                     </li>
                 </ul>
             </div>
+        </div>
     </div>
-</div>
