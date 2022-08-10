@@ -34,6 +34,9 @@
                         <a href="laporan.php" class="dropdown-toggle">Laporan</a>
                     </li>
                     <li class="">
+                        <a href="costumer.php" class="dropdown-toggle">customer</a>
+                    </li>
+                    <li class="">
                         <a href="logout.php" class="dropdown-toggle">Keluar</a>
                     </li>
                 </ul>
