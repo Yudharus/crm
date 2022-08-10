@@ -162,11 +162,11 @@
 <script type="text/javascript">
    $(document).ready(function () {
    $(".open_modal").click(function(e) {
-      var m = $(this).attr("id_master");
+      var m = $(this).attr("id");
 		   $.ajax({
     			   url: "edit_customer.php",
     			   type: "GET",
-    			   data : {modal_id: m,},
+    			   data : {id_customer: m,},
     			   success: function (ajaxData){
       			   $("#ModalEdit").html(ajaxData);
       			   $("#ModalEdit").modal('show',{backdrop: 'true'});
@@ -175,6 +175,7 @@
         });
       });
 </script>
+
 
 <!-- Javascript untuk popup data master  Delete--> 
 <script type="text/javascript">

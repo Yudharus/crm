@@ -14,7 +14,7 @@
         </div>
 
         <div class="modal-body">
-        	<form action="proses_editCustomer.php" name="modal_popup" enctype="multipart/form-data" method="POST">
+        	<form action="proses_editCostumer.php" name="modal_popup" enctype="multipart/form-data" method="POST">
         		
                 <div class="form-group" style="padding-bottom: 20px;">
                 	<label for="Modal Name">Nama Customer</label>
