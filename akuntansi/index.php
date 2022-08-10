@@ -38,7 +38,7 @@ if (@$_SESSION['manager'] || @$_SESSION['pegawai']) {
 							<div class="center">
 								<h1>
 									<i class="ace-icon fa fa-eye green"></i>
-									<span class="white">Sistem Informasi</span><span class="red"> Keuangan</span>
+									<span class="white">Pengembangan</span><span class="red"> Produk</span>
 								</h1>
 							</div>
 							<div class="space-6"></div>

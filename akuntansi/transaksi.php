@@ -27,13 +27,12 @@
     </div>
     <p><a href="#" class="btn btn-primary" data-target="#ModalAdd" data-toggle="modal"><span class='glyphicon glyphicon-plus-sign'></span>Tambah Data</button></a></p>
                <table class = "table table-bordered table-striped">
-        <tr>
+   
         <td>No</td>
-        <td>Tanggal</td>
-        <td>Nama</td>
-        <td>Keterangan</td>
-        <td>Pemasukan</td>
-        <td>Pengeluaran</td>
+        <td>Bulan</td>
+        <td>Keterangan Penjualan</td>
+        <td>Nilai Penjualan</td>
+       
         <td>Aksi</td>
         </tr>
         <?php
@@ -46,11 +45,11 @@
           ?>
             <tr>
                 <td><?php echo $no; ?></td>
-                <td><?php echo  $data['tanggal']; ?></td>
-                <td><?php echo  $data['nama']; ?></td>
+
                 <td><?php echo  $data['keterangan']; ?></td>
-                <td><?php echo  $data['pemasukkan']; ?></td>
                 <td><?php echo  $data['pengeluaran']; ?></td>
+                <td><?php echo  $data['pemasukkan']; ?></td>
+               
                 <td>
                    <a href="#" class='open_modal' id='<?php echo  $data['id_transaksi']; ?>'><button type='button' class='btn btn-success'><span class='glyphicon glyphicon-edit'></span> Edit</button></a>
                    <a href="#" onclick="confirm_modal('delete_transaksi.php?&id_transaksi=<?php echo  $data['id_transaksi']; ?>');"><button type='button' class='btn btn-danger'><span class='glyphicon glyphicon-remove-sign'>Delete</button></a>
